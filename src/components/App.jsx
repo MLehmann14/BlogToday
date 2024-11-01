@@ -5,7 +5,7 @@ import ArticleEntry from "./ArticleEntry"
 import { SignIn, SignOut } from "./Auth"
 import { useAuthentication } from "../services/authService"
 import { fetchArticles, createArticle } from "../services/articleService"
-import "./App.css"
+import "./App.css";
 
 export default function App() {
   const [articles, setArticles] = useState([])

@@ -13,7 +13,7 @@ import {
   Timestamp,
 } from "firebase/firestore"
 
-export async function addArticle({ title, body }) {
+export async function createArticle({ title, body }) {
   const data = { title, body, date: Timestamp.now() }
   const docRef = await addDoc(collection(db, "articles"), data)
   return { id: docRef.id, ...data }

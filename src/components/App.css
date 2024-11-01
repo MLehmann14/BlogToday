@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: 'Arial', sans-serif;
-  background: linear-gradient(to right, #f0f0f0, #e0e0e0);
+  background: linear-gradient(to right, #f0f0f0, #e0e0f0);
 }
 
 .App {
@@ -44,7 +44,6 @@ form input,
 form textarea {
   margin-bottom: 15px;
   width: 100%;
-  max-width: 300px;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -104,15 +103,15 @@ header button {
 
 @media (max-width: 768px) {
   .App {
-    grid-template-columns: 40% auto;
-  }
+    grid-template-columns: 30% auto; 
 
   nav {
-    width: 100px;
+    width: auto; 
   }
 
   form input,
   form textarea {
-    width: 100%;
+    width: 100%; 
   }
+}
 }
